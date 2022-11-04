@@ -4,7 +4,7 @@ import { PATH_DASHBOARD } from "@routes/paths";
 // API
 // ----------------------------------------------------------------------
 
-export const HOST_API_KEY = process.env.HOST_API_KEY || "";
+export const HOST_API = process.env.NEXT_PUBLIC_HOST_API || "";
 
 // ROOT PATH AFTER LOGIN SUCCESSFUL
 export const PATH_AFTER_LOGIN = PATH_DASHBOARD.root;

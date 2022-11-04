@@ -8,7 +8,11 @@
       "@routes/*": ["src/routes/*"],
       "@layouts/*": ["src/layouts/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@config": ["src/config.js"]
+      "@config": ["src/config.js"],
+      "@services/*": ["src/services/*"],
+      "@assets/*": ["src/assets/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@guards/*": ["src/guards/*"]
     }
   },
   "include": ["src/**/*"],

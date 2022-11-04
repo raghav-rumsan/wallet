@@ -10,6 +10,7 @@ import { useSettingsContext } from "@components/settings";
 import Main from "./Main";
 import Header from "./header";
 import { BottomNavigation } from "@components/bottom-navigation";
+import AuthGuard from "@guards/AuthGuard";
 
 // ----------------------------------------------------------------------
 
@@ -19,8 +20,6 @@ DashboardLayout.propTypes = {
 };
 
 export default function DashboardLayout({ pageTitle, children }) {
-  const { themeLayout } = useSettingsContext();
-
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -46,7 +45,6 @@ export default function DashboardLayout({ pageTitle, children }) {
       </Box>
     </>
   );
-  return renderContent();
 
-  //   return <AuthGuard> {renderContent()}</AuthGuard>;
+  return <AuthGuard> {renderContent()}</AuthGuard>;
 }
