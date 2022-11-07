@@ -11,7 +11,7 @@ const ROOTS_PROFILE = "/profile";
 // ----------------------------------------------------------------------
 
 export const PATH_AUTH = {
-  login: "/login",
+  login: "/auth/login",
 };
 
 export const PATH_DASHBOARD = {
@@ -55,7 +55,7 @@ export const BOTTOM_NAVIGATION_OPTIONS = [
   },
   {
     path: PATH_ASSETS.root,
-    label: "Doc Vault",
+    label: "Vault",
     icon: "eva:file-outline",
   },
   {

@@ -3,13 +3,16 @@ import { forwardRef } from "react";
 // @mui
 import { Box } from "@mui/material";
 import Head from "next/head";
+import { APP_NAME } from "@config";
 
 // ----------------------------------------------------------------------
 
 const Page = forwardRef(({ children, title = "", meta, ...other }, ref) => (
   <>
     <Head>
-      <title>{`${title} | ${process.env.REACT_APP_NAME}`}</title>
+      <title>{`${title} | ${APP_NAME}`}</title>
+      <meta name='viewport' content='initial-scale=1, width=device-width' />
+
       {meta}
     </Head>
 

@@ -13,7 +13,7 @@ import {
 // ----------------------------------------------------------------------
 
 const initialState = {
-  isAuthenticated: false,
+  isAuthenticated: false, // should be false by default,
   isInitialized: false,
   token: null,
   user: null,

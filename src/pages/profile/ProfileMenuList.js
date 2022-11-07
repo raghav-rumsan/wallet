@@ -9,6 +9,7 @@ import {
   Switch,
 } from "@mui/material";
 import { useSettingsContext } from "@components/settings";
+import Iconify from "@components/iconify";
 
 const ProfileMenu = (props) => {
   const [checked, setChecked] = useState(["themeMode"]);
@@ -54,18 +55,21 @@ const ProfileMenu = (props) => {
             <WifiIcon />
           </ListItemIcon> */}
           <ListItemText id='switch-list-label-wifi' primary='Backup Wallet' />
+          <Iconify icon='akar-icons:chevron-right' />
         </ListItemButton>
         <ListItemButton>
           {/* <ListItemIcon>
             <WifiIcon />
           </ListItemIcon> */}
           <ListItemText id='switch-list-label-wifi' primary='Current Network' />
+          <Iconify icon='akar-icons:chevron-right' />
         </ListItemButton>
         <ListItemButton>
           {/* <ListItemIcon>
             <WifiIcon />
           </ListItemIcon> */}
           <ListItemText id='switch-list-label-wifi' primary='Settings' />
+          <Iconify icon='akar-icons:chevron-right' />
         </ListItemButton>
       </List>
     </>

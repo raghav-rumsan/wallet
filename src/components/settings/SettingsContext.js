@@ -44,7 +44,6 @@ export function SettingsProvider({ children }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const mode = getCookie("themeMode") || defaultSettings.themeMode;
-      console.log("mode", mode);
       setThemeMode(mode);
     }
   }, []);
@@ -54,7 +53,6 @@ export function SettingsProvider({ children }) {
   const onToggleMode = useCallback(() => {
     const value = themeMode === "light" ? "dark" : "light";
     setThemeMode(value);
-    console.log("value", value);
     setCookie("themeMode", value);
   }, [themeMode]);
 

@@ -20,9 +20,9 @@ const certainCondition = true;
 
 export default function AuthGuard({ children }) {
   // temporary --- remove this
-  if (certainCondition) {
-    return <>{children}</>;
-  }
+  // if (certainCondition) {
+  //   return <>{children}</>;
+  // }
 
   // redirect to login page if not authenticated
 
